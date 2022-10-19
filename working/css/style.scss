@@ -1,0 +1,20 @@
+//import Helpers
+@import "sass/helpers/_variables";
+@import "sass/helpers/_mixins";
+@import "sass/helpers/_base";
+@import "sass/helpers/_grid";
+@import "sass/helpers/_classes";
+
+//import partial components
+@import "sass/components/_buttons";
+@import "sass/components/_lists";
+@import "sass/components/_icons";
+@import "sass/components/_heading";
+@import "sass/components/_components";
+
+//import main components
+@import "sass/pages/_home";
+@import "sass/layout/_header";
+@import "sass/layout/_footer";
+@import "sass/layout/_sections";
+//  a comment to test only

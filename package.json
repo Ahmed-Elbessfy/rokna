@@ -1,0 +1,34 @@
+{
+  "name": "rokna",
+  "version": "1.0.0",
+  "description": "Rokna is a website for transporting stuff in KSA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Rokna",
+    "tranpsort",
+    "نقل",
+    "أثاث"
+  ],
+  "author": "Ahmed Elbessfy - devxhat",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-live-server": "^0.0.31",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.1.0",
+    "sass": "^1.55.0"
+  }
+}

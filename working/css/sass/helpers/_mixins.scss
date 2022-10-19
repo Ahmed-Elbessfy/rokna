@@ -1,0 +1,76 @@
+@mixin overlay($cl, $opacity) {
+  // Overlay mixin
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($cl, $opacity);
+}
+
+@mixin prefixer($prop, $val, $prefixes: ()) {
+  //prefixer
+  @each $pref in $prefixes {
+    #{'-' + $pref + '-' + $prop}: $val;
+  }
+
+  #{$prop}: $val;
+}
+
+@mixin multiprefixer($prop, $val1, $val2, $val3, $val4, $prefixes: ()) {
+  //prefixer for multi value porps
+  @each $pref in $prefixes {
+    #{'-' + $pref + '-' + $prop}: $val1, $val2, $val3, $val4;
+  }
+
+  #{$prop}: $val1, $val2, $val3, $val4;
+}
+
+@mixin transition($args...) {
+  //specifiedprefixerforaspecifiedproperty-webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  -ms-transition: $args;
+  transition: $args;
+  -webkit-transition: $args;
+}
+
+@mixin gridDim($min, $max, $gab) {
+  //grid system creator
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, $max));
+  grid-gap: $gab;
+}
+
+@mixin opacity_comp($val) {
+  //opacitycreatorwithcompatibilityforallbrowserszoom: 1;
+  $ie_opacity: $val * 100;
+  filter: alpha(opacity=$ie_opacity);
+  opacity: $val;
+  -webkit-filter: alpha(opacity=$ie_opacity);
+}
+
+@mixin border($width, $color, $style, $directions: ()) {
+  @if $directions== "all" {
+    border: $color $width $style;
+  } @else {
+    @each $dir in $directions {
+      border-#{$dir}: $color $width $style;
+    }
+  }
+}
+
+@mixin make_animation($name) {
+  //animation prefixes creator
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
