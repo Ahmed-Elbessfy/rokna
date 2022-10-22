@@ -32,45 +32,39 @@
 
 <body>
   <!-- Header  -->
-  <header>
+  <header id="home">
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark " dir="rtl">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">الركنة</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#services">خدماتنا</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#previous-works">أعمالنا السابقة</a>
+            </li>
+            <li class="nav-item">
+              <ul class="social-contact">
                 <li>
-                  <hr class="dropdown-divider">
+                  <a href="tel:+" target="_blank">call </a>
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <a href="http://wa.me/+966512345678" target="_blank">whatsapp</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -96,7 +90,7 @@
   <!-- Main content  -->
   <main>
     <!-- services  -->
-    <section>
+    <section id="services">
       <h2>ماذا نقدم ؟</h2>
       <ul>
         <li>نوفر عمالة مدربة على الفك والتغليف والنقل والتركيب و فنيين لفك وتركيب المكيفات بأنواعها والستائر وغرف النوم
@@ -109,7 +103,7 @@
       </ul>
     </section>
     <!-- previous works  -->
-    <section>
+    <section id="previous-works">
       <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
