@@ -17,23 +17,6 @@ body {
   width: 100%; // for vertical scroll effect
 }
 
-// for vertical scroll effect
-header,
-main {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  background-color: $gray-cl;
-}
-
-// for vertical scroll effect
-header {
-  position: fixed;
-  top: 0;
-  z-index: 0;
-  min-height: 80vh;
-}
-
 //setting font-size for all elements
 $font-sizes: (
   p: 1,
