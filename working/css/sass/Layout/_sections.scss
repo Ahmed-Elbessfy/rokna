@@ -1,3 +1,14 @@
 section {
+  padding: 2rem 0;
   @include border(5px, $gold-cl, solid, bottom);
+
+  &#services {
+    color: $blue-cl;
+    border-color: $blue-cl;
+    font-family: $sec-ff;
+
+    ul {
+      font-weight: 500;
+    }
+  }
 }
