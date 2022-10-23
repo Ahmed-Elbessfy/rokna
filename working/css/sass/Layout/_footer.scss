@@ -1,2 +1,13 @@
 footer {
+  padding: 2rem 0;
+  font-family: $sec-ff;
+
+  .social-contact {
+    width: 20rem;
+    list-style: none;
+    svg {
+      width: 2.5em;
+      height: 2.5rem;
+    }
+  }
 }
