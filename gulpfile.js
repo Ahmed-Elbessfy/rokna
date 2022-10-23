@@ -18,7 +18,7 @@ const live = () => {
   connect.server({
     root: "./dist/",
     livereload: true,
-    port: 8765,
+    port: 3000,
   });
 
   console.log("live is done");
