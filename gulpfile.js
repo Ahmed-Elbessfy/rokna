@@ -77,11 +77,13 @@ const img = () => {
 // compress dist folder in dist-compressed.zip file
 // add dist-compressed.zip file in the source folder
 const zipTask = () => {
-  return gulp
-    .src("dist/**/*.*")
-    .pipe(zip("dist-compressed.zip"))
-    .pipe(notify("zip "))
-    .pipe(gulp.dest("."));
+  return (
+    gulp
+      .src("dist/**/*.*")
+      .pipe(zip("dist-compressed.zip"))
+      // .pipe(notify("zip "))
+      .pipe(gulp.dest("."))
+  );
 };
 
 const watchTask = () => {
