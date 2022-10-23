@@ -10,11 +10,9 @@ html,
 body {
   font-size: $basic-fz;
   font-family: $main-ff, "helvetica", "times new roman", serif;
-  color: $blue-cl !important;
+  color: $gold-cl !important;
   text-align: center;
-  background-color: $gray-cl;
-  position: absolute; // for vertical scroll effect
-  width: 100%; // for vertical scroll effect
+  background-color: $light-blue-cl;
 }
 
 //setting font-size for all elements
@@ -52,7 +50,7 @@ a:active,
 a:focus {
   text-decoration: none;
   text-transform: capitalize;
-  // color: inherit;
+  color: $gold-cl;
 }
 
 li {
@@ -63,16 +61,8 @@ img {
   max-width: 100%;
 }
 
-video {
-  max-width: 100%;
-}
-
 button {
   text-transform: capitalize;
-}
-
-p {
-  margin-bottom: 2rem;
 }
 
 strong {
