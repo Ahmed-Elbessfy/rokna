@@ -1,2 +1,7 @@
 header {
+  @include border(5px, $gold-cl, solid, bottom);
+
+  & > .container {
+    padding-top: 6rem;
+  }
 }

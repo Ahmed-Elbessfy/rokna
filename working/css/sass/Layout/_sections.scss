@@ -1,2 +1,3 @@
 section {
+  @include border(5px, $gold-cl, solid, bottom);
 }
