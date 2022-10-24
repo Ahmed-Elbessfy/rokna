@@ -1,0 +1,11 @@
+.navbar-toggler {
+  width: 4rem;
+  height: 3.5rem;
+  @include border(3px, $gold-cl, solid, all);
+
+  .navbar-toggler-icon {
+    width: 100%;
+    height: 2px;
+    background: $gold-cl;
+  }
+}

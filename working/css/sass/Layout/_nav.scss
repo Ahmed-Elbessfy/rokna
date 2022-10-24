@@ -1,0 +1,24 @@
+// here goes components does not have a separate component file
+nav {
+  @include border(3px, $gold-cl, solid, bottom);
+  z-index: 10;
+  .navbar-brand {
+    font-size: 30px;
+  }
+
+  a.nav-link,
+  a.nav-link:hover,
+  a.nav-link:active,
+  a.nav-link:focus {
+    color: $gold-cl;
+  }
+
+  .social-contact {
+    width: 10rem;
+    list-style: none;
+    svg {
+      width: 2em;
+      height: 2rem;
+    }
+  }
+}
