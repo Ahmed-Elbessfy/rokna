@@ -1,1 +1,13 @@
 // here goes components does not have a separate component file
+.carousel-indicators [data-bs-target] {
+  height: 8px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: $blue-cl;
+}
