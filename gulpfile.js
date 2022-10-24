@@ -93,11 +93,11 @@ const watchTask = () => {
   watch(["dist/**/*.*"], zipTask);
 };
 
+// deploy task to github
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(deploy());
+});
 exports.default = parallel(watchTask, live);
-// // deploy task to github
-// gulp.task("deploy", function () {
-//   return gulp.src("./dist/**/*").pipe(deploy());
-// });
 
 // gulp.task("live", async () => {
 // });
