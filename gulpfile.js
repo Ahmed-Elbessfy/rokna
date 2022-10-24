@@ -13,6 +13,10 @@ const gulp = require("gulp"),
   babel = require("gulp-babel"),
   deploy = require("gulp-gh-pages");
 
+// deploy task to github
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(deploy());
+});
 // Live server task : creates live server at: localhost:8765 and allow reload
 const live = () => {
   connect.server({
@@ -93,10 +97,6 @@ const watchTask = () => {
   watch(["dist/**/*.*"], zipTask);
 };
 
-// deploy task to github
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(deploy());
-});
 exports.default = parallel(watchTask, live);
 
 // gulp.task("live", async () => {
