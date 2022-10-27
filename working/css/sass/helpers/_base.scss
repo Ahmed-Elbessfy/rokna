@@ -57,4 +57,10 @@ strong {
   font-size: 130%;
 }
 
+@media (min-width: $xs-width) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
 // animations
