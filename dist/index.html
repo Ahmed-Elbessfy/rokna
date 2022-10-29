@@ -236,6 +236,14 @@
 
     <p>جميع الحقوق محفوظة &copy; 2022 </p>
   </footer>
+  <script async>
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarSupportedContent')
+    const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
+    navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle() })
+    })
+  </script>
 </body>
 
 </html>
